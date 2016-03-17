@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "COB.Dashboard.Web"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-COB.Dashboard.Web-6b901383-a936-49b5-a361-bec5644e73e7;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
