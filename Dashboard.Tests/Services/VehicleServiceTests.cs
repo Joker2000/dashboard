@@ -37,14 +37,14 @@ namespace Dashboard.Tests.Services
         }
 
         /// <summary>
-        /// The get Madza info.
+        /// The get Audi info.
         /// </summary>
         [Test]
-        public void GetMadzaInfo()
+        public void GetAudiInfo()
         {
             // Arrange
-            var vehicle = new VehicleDto { Make = "Mazda", NumberPlate = "LV58 EGU" };
-            
+            var vehicle = new VehicleDto { Make = "Audi", NumberPlate = "YD54 UAT" };
+
             // Act
             var result = this.vehicleService.GetVehicleInfo(vehicle);
 
@@ -52,13 +52,13 @@ namespace Dashboard.Tests.Services
         }
 
         /// <summary>
-        /// The get honda info.
+        /// The get Vauxhall info.
         /// </summary>
         [Test]
-        public void GetHondaInfo()
+        public void GetVauxhallInfo()
         {
             // Arrange
-            var vehicle = new VehicleDto { Make = "Honda", NumberPlate = "GJ05 ABX" };
+            var vehicle = new VehicleDto { Make = "Vauxhall", NumberPlate = "E903 CMY" };
 
             // Act
             var result = this.vehicleService.GetVehicleInfo(vehicle);
