@@ -43,7 +43,7 @@ namespace Dashboard.API.Controllers
         /// </returns>
         public IEnumerable<VehicleDto> Get()
         {
-            var vehicle = this.vehicleService.GetVehicleInfo(new VehicleDto { Make = "Honda", NumberPlate = "GJ05 ABX" });
+            var vehicle = this.vehicleService.GetVehicleInfo(new VehicleDto { Make = "Audi", NumberPlate = "YD54 UAT" });
 
             var vehicles = new List<VehicleDto> { vehicle };
             
