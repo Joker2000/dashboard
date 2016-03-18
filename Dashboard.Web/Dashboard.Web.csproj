@@ -129,13 +129,48 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\lib\gentelella\animate.min.css" />
+    <Content Include="Content\lib\gentelella\custom.css" />
+    <Content Include="Content\lib\gentelella\floatexamples.css" />
+    <Content Include="Content\lib\gentelella\font-awesome.css" />
+    <Content Include="Content\lib\gentelella\green.css" />
+    <Content Include="Content\lib\gentelella\jquery-jvectormap-2.0.3.css" />
+    <Content Include="Content\lib\images\img.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\lib\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\lib\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\lib\fonts\fontawesome-webfont.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\gentelella\bootstrap-progressbar.min.js" />
+    <Content Include="Scripts\gentelella\chart.min.js" />
+    <Content Include="Scripts\gentelella\curvedLines.js" />
+    <Content Include="Scripts\gentelella\custom.js" />
+    <Content Include="Scripts\gentelella\date.js" />
+    <Content Include="Scripts\gentelella\daterangepicker.js" />
+    <Content Include="Scripts\gentelella\gauge.min.js" />
+    <Content Include="Scripts\gentelella\gauge_demo.js" />
+    <Content Include="Scripts\gentelella\gdp-data.js" />
+    <Content Include="Scripts\gentelella\icheck.min.js" />
+    <Content Include="Scripts\gentelella\jquery-jvectormap-2.0.3.min.js" />
+    <Content Include="Scripts\gentelella\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="Scripts\gentelella\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Scripts\gentelella\jquery.flot.js" />
+    <Content Include="Scripts\gentelella\jquery.flot.orderBars.js" />
+    <Content Include="Scripts\gentelella\jquery.flot.pie.js" />
+    <Content Include="Scripts\gentelella\jquery.flot.resize.js" />
+    <Content Include="Scripts\gentelella\jquery.flot.spline.js" />
+    <Content Include="Scripts\gentelella\jquery.flot.stack.js" />
+    <Content Include="Scripts\gentelella\jquery.flot.time.min.js" />
+    <Content Include="Scripts\gentelella\jquery.flot.tooltip.min.js" />
+    <Content Include="Scripts\gentelella\jquery.nicescroll.min.js" />
+    <Content Include="Scripts\gentelella\moment.min.js" />
+    <Content Include="Scripts\gentelella\pace.min.js" />
+    <Content Include="Scripts\gentelella\skycons.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -144,6 +179,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\gentelella\nprogress.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -158,8 +194,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
