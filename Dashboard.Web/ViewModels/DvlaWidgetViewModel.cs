@@ -9,8 +9,6 @@
 
 namespace Dashboard.Web.ViewModels
 {
-    using Dashboard.Dto;
-
     /// <summary>
     /// The DVLA Widget view model.
     /// </summary>
@@ -29,11 +27,16 @@ namespace Dashboard.Web.ViewModels
         /// <summary>
         /// Gets or sets the road tax.
         /// </summary>
-        public RequirementDto RoadTax { get; set; }
+        public RequirementViewModel RoadTax { get; set; }
 
         /// <summary>
         /// Gets or sets the mot.
         /// </summary>
-        public RequirementDto Mot { get; set; }
+        public RequirementViewModel Mot { get; set; }
+
+        /// <summary>
+        /// Gets a value indicating whether is due requirement.
+        /// </summary>
+        public bool IsDueRequirement => this.RoadTax.IsDue || this.Mot.IsDue;
     }
 }

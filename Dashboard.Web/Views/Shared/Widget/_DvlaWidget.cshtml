@@ -1,5 +1,36 @@
 ﻿@model Dashboard.Web.ViewModels.DvlaWidgetViewModel
 
-DVLA
+<div class="widget @(Model.IsDueRequirement ? "widget-orange" : "widget-green")">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <h4 class="widget-header">DVLA</h4>
+        </div>
+    </div>
 
-@Model.Make
+    <div class="row">
+        <div class="col-sm-4 col-md-3">
+            Make:
+        </div>
+        <div class="col-sm-8 col-md-9">
+            @Model.Make
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-md-3">
+            MOT:
+        </div>
+        <div class="col-sm-8 col-md-9">
+            @(Model.Mot.IsValid ? $"Valid ({Model.Mot.DaysToGo} days to go!)" : "Invalid")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-md-3">
+            Tax:
+        </div>
+        <div class="col-sm-8 col-md-9">
+            @(Model.Mot.IsValid ? $"Valid ({Model.Mot.DaysToGo} days to go!)" : "Invalid")
+        </div>
+    </div>
+</div>

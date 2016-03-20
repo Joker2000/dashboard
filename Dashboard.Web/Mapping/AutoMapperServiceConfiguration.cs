@@ -11,9 +11,6 @@ namespace Dashboard.Web.Mapping
 {
     using AutoMapper;
 
-    using Dashboard.Dto;
-    using Dashboard.Web.ViewModels;
-
     /// <summary>
     /// The auto Mapper service configuration.
     /// </summary>
@@ -29,7 +26,7 @@ namespace Dashboard.Web.Mapping
         /// </summary>
         public static void Configure()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<VehicleDto, DvlaWidgetViewModel>());
+            var config = new MapperConfiguration(cfg => { cfg.AddProfile<VehicleProfile>(); });
             Mapper = config.CreateMapper();
         }
     }

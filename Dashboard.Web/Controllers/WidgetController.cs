@@ -43,7 +43,7 @@ namespace Dashboard.Web.Controllers
         /// </returns>
         public ActionResult Dvla()
         {
-            var dto = this.dvlaService.GetVehicleDetails("Honda", "GJ05ABX");
+            var dto = this.dvlaService.GetVehicleDetails("Audi", "YD54UAT");
 
             var viewModel = AutoMapperServiceConfiguration.Mapper.Map<VehicleDto, DvlaWidgetViewModel>(dto);
 
