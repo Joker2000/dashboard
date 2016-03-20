@@ -1,30 +1,33 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IHtmlParser.cs" company="">
+// <copyright file="IDvlaService.cs" company="">
 //   
 // </copyright>
 // <summary>
-//   Defines the IHtmlParser type.
+//   Defines the IDvlaService type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.API.Services.Parsers
+namespace Dashboard.Web.Services
 {
     using Dashboard.Dto;
 
     /// <summary>
-    /// The HtmlParser interface.
+    /// The DVLA Service interface.
     /// </summary>
-    public interface IHtmlParser
+    public interface IDvlaService
     {
         /// <summary>
-        /// The parse.
+        /// Gets the vehicle details.
         /// </summary>
-        /// <param name="html">
-        /// The html.
+        /// <param name="make">
+        /// The make.
+        /// </param>
+        /// <param name="numberPlate">
+        /// The number plate.
         /// </param>
         /// <returns>
         /// The <see cref="VehicleDto"/>.
         /// </returns>
-        VehicleDto Parse(string html);
+        VehicleDto GetVehicleDetails(string make, string numberPlate);
     }
 }

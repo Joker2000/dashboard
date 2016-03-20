@@ -12,10 +12,10 @@ namespace Dashboard.API.Controllers
     using System.Collections.Generic;
     using System.Web.Http;
 
-    using Dashboard.Data.Web;
+    using Dashboard.API.DAL;
+    using Dashboard.API.Services;
+    using Dashboard.API.Services.Parsers;
     using Dashboard.Dto;
-    using Dashboard.Services;
-    using Dashboard.Services.Parsers;
 
     /// <summary>
     /// The car controller.
@@ -53,15 +53,20 @@ namespace Dashboard.API.Controllers
         /// <summary>
         /// The get.
         /// </summary>
-        /// <param name="vehicle">
-        /// The vehicle.
+        /// <param name="make">
+        /// The make.
+        /// </param>
+        /// <param name="numberPlate">
+        /// The number Plate.
         /// </param>
         /// <returns>
         /// The <see cref="VehicleDto"/>.
         /// </returns>
-        //public VehicleDto Get(VehicleDto vehicle)
-        //{
-        //    return this.vehicleService.GetVehicleInfo(vehicle);
-        //}
+        [HttpGet]
+        public VehicleDto Get(string make, string numberPlate)
+        {
+            var vehicle = this.vehicleService.GetVehicleInfo(make, numberPlate);
+            return vehicle;
+        }
     }
 }

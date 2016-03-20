@@ -9,7 +9,7 @@
 
 namespace Dashboard.Tests.Mappers
 {
-    using Dashboard.Services.Parsers;
+    using Dashboard.API.Services.Parsers;
 
     using NUnit.Framework;
 

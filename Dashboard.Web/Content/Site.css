@@ -28,8 +28,12 @@ textarea {
     border-bottom: 1px solid #eee;
 }
 
-.navbar a, .navbar a:visited {
+.navbar a, .navbar a:visited, .sidebar a, .sidebar a:visited {
     color: #ffffff;
+}
+
+.sidebar a:active {
+    background-color: #FF5C00;
 }
 
 .nav > li > a:hover, .nav > li > a:visited, .nav > li > a:active {
@@ -39,4 +43,12 @@ textarea {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+}
+
+.page-header {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-header {
+    color: #fff;
 }

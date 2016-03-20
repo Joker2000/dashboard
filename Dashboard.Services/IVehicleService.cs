@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.Services
+namespace Dashboard.API.Services
 {
     using System.Collections.Generic;
 
@@ -32,12 +32,15 @@ namespace Dashboard.Services
         /// <summary>
         /// The get vehicle info.
         /// </summary>
-        /// <param name="vehicles">
-        /// The vehicles.
+        /// <param name="make">
+        /// The make.
+        /// </param>
+        /// <param name="numberPlate">
+        /// The number Plate.
         /// </param>
         /// <returns>
-        /// The <see cref="IEnumerable{VehicleDto}"/>.
+        /// The <see cref="VehicleDto"/>.
         /// </returns>
-        IEnumerable<VehicleDto> GetVehicleInfo(IEnumerable<VehicleDto> vehicles);
+        VehicleDto GetVehicleInfo(string make, string numberPlate);
     }
 }

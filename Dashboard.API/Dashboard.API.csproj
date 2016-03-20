@@ -230,17 +230,17 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dashboard.DAL\Dashboard.Data.Web.csproj">
+    <ProjectReference Include="..\Dashboard.DAL\Dashboard.API.DAL.csproj">
       <Project>{A85946B1-ED14-4A9A-91C5-652ACCF72163}</Project>
-      <Name>Dashboard.Data.Web</Name>
+      <Name>Dashboard.API.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dashboard.Dto\Dashboard.Dto.csproj">
       <Project>{AA147434-4111-4B91-A8DB-A7680D3B263B}</Project>
       <Name>Dashboard.Dto</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dashboard.Services\Dashboard.Services.csproj">
+    <ProjectReference Include="..\Dashboard.Services\Dashboard.API.Services.csproj">
       <Project>{0E945DA3-E35D-4CFA-82C1-0FB9DA9A2786}</Project>
-      <Name>Dashboard.Services</Name>
+      <Name>Dashboard.API.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

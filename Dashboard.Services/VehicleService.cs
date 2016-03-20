@@ -7,14 +7,14 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.Services
+namespace Dashboard.API.Services
 {
     using System.Collections.Generic;
     using System.Linq;
 
-    using Dashboard.Data.Web;
+    using Dashboard.API.DAL;
+    using Dashboard.API.Services.Parsers;
     using Dashboard.Dto;
-    using Dashboard.Services.Parsers;
 
     /// <summary>
     /// The vehicle service.
@@ -63,15 +63,19 @@ namespace Dashboard.Services
         /// <summary>
         /// The get vehicle info.
         /// </summary>
-        /// <param name="vehicles">
-        /// The vehicles.
+        /// <param name="make">
+        /// The make.
+        /// </param>
+        /// <param name="numberPlate">
+        /// The number Plate.
         /// </param>
         /// <returns>
-        /// The <see cref="IEnumerable{VehicleDto}"/>.
+        /// The <see cref="VehicleDto"/>.
         /// </returns>
-        public IEnumerable<VehicleDto> GetVehicleInfo(IEnumerable<VehicleDto> vehicles)
+        public VehicleDto GetVehicleInfo(string make, string numberPlate)
         {
-            return vehicles.Select(this.MakeEnquiry);
+            var vehicleDto = new VehicleDto { Make = make, NumberPlate = numberPlate };
+            return this.MakeEnquiry(vehicleDto);
         }
 
         /// <summary>

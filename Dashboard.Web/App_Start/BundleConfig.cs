@@ -23,9 +23,12 @@ namespace Dashboard.Web
                       "~/Scripts/bootstrap.min.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/lib").Include(
                       "~/Content/bootstrap.min.css",
                       "~/Content/dashboard.css",
+                      "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/site.css"));
         }
     }

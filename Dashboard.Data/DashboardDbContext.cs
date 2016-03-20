@@ -7,12 +7,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.Data
+namespace Dashboard.API.Data
 {
     using System.Data.Entity;
     using System.Data.Entity.ModelConfiguration.Conventions;
 
-    using Dashboard.Data.Entities;
+    using Dashboard.API.Data.Entities;
 
     /// <summary>
     /// The dashboard db context.

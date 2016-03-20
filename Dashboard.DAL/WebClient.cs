@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.Data.Web
+namespace Dashboard.API.DAL
 {
     using System;
     using System.IO;

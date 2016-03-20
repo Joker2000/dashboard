@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.Data.Entities
+namespace Dashboard.API.Data.Entities
 {
     using System;
     using System.ComponentModel.DataAnnotations;

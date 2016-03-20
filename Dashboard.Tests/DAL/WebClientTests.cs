@@ -12,7 +12,7 @@ namespace Dashboard.Tests.DAL
     using System;
     using System.Configuration;
 
-    using Dashboard.Data.Web;
+    using Dashboard.API.DAL;
 
     using NUnit.Framework;
 

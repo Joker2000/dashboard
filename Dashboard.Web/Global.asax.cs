@@ -13,6 +13,8 @@ namespace Dashboard.Web
     using System.Web.Optimization;
     using System.Web.Routing;
 
+    using Dashboard.Web.Mapping;
+
     /// <summary>
     /// The mvc application.
     /// </summary>
@@ -24,6 +26,7 @@ namespace Dashboard.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            AutoMapperServiceConfiguration.Configure();
         }
     }
 }

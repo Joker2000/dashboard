@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.Services.Parsers
+namespace Dashboard.API.Services.Parsers
 {
     using System;
     using System.Collections.Generic;

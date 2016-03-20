@@ -14,15 +14,15 @@ namespace Dashboard.Web.Controllers
     /// <summary>
     /// The home controller.
     /// </summary>
-    public class HomeController : Controller
+    public class DashboardController : Controller
     {
         /// <summary>
-        /// The index.
+        /// The Home.
         /// </summary>
         /// <returns>
         /// The <see cref="ActionResult"/>.
         /// </returns>
-        public ActionResult Index()
+        public ActionResult Home()
         {
             return this.View();
         }

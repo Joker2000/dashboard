@@ -9,10 +9,10 @@
 
 namespace Dashboard.Tests.Services
 {
-    using Dashboard.Data.Web;
+    using Dashboard.API.DAL;
+    using Dashboard.API.Services;
+    using Dashboard.API.Services.Parsers;
     using Dashboard.Dto;
-    using Dashboard.Services;
-    using Dashboard.Services.Parsers;
 
     using NUnit.Framework;
 
