@@ -22,3 +22,21 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar-dashboard {
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #4A4771 0, #7C3875 100%);
+    border-bottom: 1px solid #eee;
+}
+
+.navbar a, .navbar a:visited {
+    color: #ffffff;
+}
+
+.nav > li > a:hover, .nav > li > a:visited, .nav > li > a:active {
+    background-color: #00BC8A;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
