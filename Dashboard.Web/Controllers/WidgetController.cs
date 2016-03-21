@@ -9,7 +9,12 @@
 
 namespace Dashboard.Web.Controllers
 {
+    using System;
     using System.Web.Mvc;
+
+    using AutoMapper;
+
+    using Castle.Components.DictionaryAdapter;
 
     using Dashboard.Dto;
     using Dashboard.Web.Mapping;
@@ -29,9 +34,20 @@ namespace Dashboard.Web.Controllers
         /// <summary>
         /// Initializes a new instance of the <see cref="WidgetController"/> class.
         /// </summary>
-        public WidgetController()
+        //public WidgetController()
+        //{
+        //    this.dvlaService = new DvlaService();
+        //}
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="WidgetController"/> class.
+        /// </summary>
+        /// <param name="dvlaService">
+        /// The dvla service.
+        /// </param>
+        public WidgetController(IDvlaService dvlaService)
         {
-            this.dvlaService = new DvlaService();
+            this.dvlaService = dvlaService;
         }
 
         // GET: Widget
@@ -45,7 +61,7 @@ namespace Dashboard.Web.Controllers
         {
             var dto = this.dvlaService.GetVehicleDetails("Audi", "YD54UAT");
 
-            var viewModel = AutoMapperServiceConfiguration.Mapper.Map<VehicleDto, DvlaWidgetViewModel>(dto);
+            var viewModel = Mapper.Map<VehicleDto, DvlaWidgetViewModel>(dto);
 
             return this.PartialView("Widget/_DvlaWidget", viewModel);
         }
