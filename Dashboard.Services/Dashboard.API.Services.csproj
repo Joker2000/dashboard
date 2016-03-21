@@ -55,7 +55,6 @@
   <ItemGroup>
     <Compile Include="IVehicleService.cs" />
     <Compile Include="Parsers\IHtmlParser.cs" />
-    <Compile Include="Parsers\EmailHtmlParser.cs" />
     <Compile Include="Parsers\VehicleHtmlParser.cs" />
     <Compile Include="VehicleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
