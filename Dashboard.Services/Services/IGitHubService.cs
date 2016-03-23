@@ -9,6 +9,8 @@
 
 namespace Dashboard.API.Services.Services
 {
+    using Octokit;
+
     /// <summary>
     /// The GitHubService interface.
     /// </summary>
@@ -17,9 +19,15 @@ namespace Dashboard.API.Services.Services
         /// <summary>
         /// The get last commit.
         /// </summary>
+        /// <param name="account">
+        /// The account.
+        /// </param>
         /// <param name="repo">
         /// The repo.
         /// </param>
-        void GetLastCommit(string repo);
+        /// <returns>
+        /// The <see cref="Commit"/>.
+        /// </returns>
+        Commit GetLastCommit(string account, string repo);
     }
 }

@@ -31,7 +31,7 @@ namespace Dashboard.Web.Services
         /// </summary>
         public DvlaService()
         {
-            this.Client = new RestClient { BaseUrl = new Uri("http://localhost:56162/api/") };
+            this.Client = new RestClient { BaseUrl = new Uri("http://localhost:56163/api/") };
         }
 
         /// <summary>

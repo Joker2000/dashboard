@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{99E1E339-C50B-446F-9100-8CCE3BE2773F}"
 EndProject
@@ -31,6 +31,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{0AEE3A5F-E552-47DE-9C72-3BBD9599ABCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Web.Services", "Dashboard.Web.Services\Dashboard.Web.Services.csproj", "{2DFA04C3-D23A-4E32-9DA2-1C4BF3BAF34D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Dashboard.Web.MVC6", "Dashboard.Web.MVC6\Dashboard.Web.MVC6.xproj", "{11421937-1856-4FD9-B483-442D22D52325}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +72,10 @@ Global
 		{2DFA04C3-D23A-4E32-9DA2-1C4BF3BAF34D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DFA04C3-D23A-4E32-9DA2-1C4BF3BAF34D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DFA04C3-D23A-4E32-9DA2-1C4BF3BAF34D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11421937-1856-4FD9-B483-442D22D52325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11421937-1856-4FD9-B483-442D22D52325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11421937-1856-4FD9-B483-442D22D52325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11421937-1856-4FD9-B483-442D22D52325}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +91,6 @@ Global
 		{1D5F6607-8EF7-4204-98D8-5FBD883A7713} = {99E1E339-C50B-446F-9100-8CCE3BE2773F}
 		{0AEE3A5F-E552-47DE-9C72-3BBD9599ABCB} = {99E1E339-C50B-446F-9100-8CCE3BE2773F}
 		{2DFA04C3-D23A-4E32-9DA2-1C4BF3BAF34D} = {0AEE3A5F-E552-47DE-9C72-3BBD9599ABCB}
+		{11421937-1856-4FD9-B483-442D22D52325} = {0AEE3A5F-E552-47DE-9C72-3BBD9599ABCB}
 	EndGlobalSection
 EndGlobal
