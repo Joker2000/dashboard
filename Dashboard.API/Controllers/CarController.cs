@@ -15,6 +15,7 @@ namespace Dashboard.API.Controllers
     using Dashboard.API.DAL;
     using Dashboard.API.Services;
     using Dashboard.API.Services.Parsers;
+    using Dashboard.API.Services.Services;
     using Dashboard.Dto;
 
     /// <summary>

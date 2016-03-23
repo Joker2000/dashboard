@@ -7,10 +7,8 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.API.Services
+namespace Dashboard.API.Services.Services
 {
-    using System.Collections.Generic;
-
     using Dashboard.Dto;
 
     /// <summary>

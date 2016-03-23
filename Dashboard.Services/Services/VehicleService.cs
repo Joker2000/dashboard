@@ -7,11 +7,8 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.API.Services
+namespace Dashboard.API.Services.Services
 {
-    using System.Collections.Generic;
-    using System.Linq;
-
     using Dashboard.API.DAL;
     using Dashboard.API.Services.Parsers;
     using Dashboard.Dto;

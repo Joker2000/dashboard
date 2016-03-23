@@ -12,6 +12,7 @@ namespace Dashboard.Tests.Services
     using Dashboard.API.DAL;
     using Dashboard.API.Services;
     using Dashboard.API.Services.Parsers;
+    using Dashboard.API.Services.Services;
     using Dashboard.Dto;
 
     using NUnit.Framework;
