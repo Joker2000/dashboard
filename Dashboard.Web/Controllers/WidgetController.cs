@@ -34,14 +34,6 @@ namespace Dashboard.Web.Controllers
         /// <summary>
         /// Initializes a new instance of the <see cref="WidgetController"/> class.
         /// </summary>
-        //public WidgetController()
-        //{
-        //    this.dvlaService = new DvlaService();
-        //}
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="WidgetController"/> class.
-        /// </summary>
         /// <param name="dvlaService">
         /// The dvla service.
         /// </param>

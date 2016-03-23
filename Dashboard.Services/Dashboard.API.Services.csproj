@@ -61,7 +61,6 @@
     <Compile Include="Services\IGitHubService.cs" />
     <Compile Include="Services\IVehicleService.cs" />
     <Compile Include="Parsers\IHtmlParser.cs" />
-    <Compile Include="Parsers\EmailHtmlParser.cs" />
     <Compile Include="Parsers\VehicleHtmlParser.cs" />
     <Compile Include="Services\VehicleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
