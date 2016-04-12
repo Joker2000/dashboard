@@ -1,43 +1,40 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="GitHubService.cs" company="">
+// <copyright file="GitHubController.cs" company="">
 //   
 // </copyright>
 // <summary>
-//   Defines the GitHubService type.
+//   Defines the GitHubController type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Dashboard.API.Services.Services
+namespace Dashboard.API.Controllers
 {
-    using System;
+    using System.Web.Http;
 
-    using System.Collections.Generic;
-    using System.Linq;
-
-    using Octokit;
+    using Dashboard.API.Services.Services;
+    using Dashboard.Dto;
 
     /// <summary>
-    /// The git hub service.
+    /// The git hub controller.
     /// </summary>
-    public class GitHubService : IGitHubService
+    public class GitHubController : ApiController
     {
         /// <summary>
-        /// The client.
+        /// The git hub service.
         /// </summary>
-        private readonly GitHubClient client;
+        private readonly IGitHubService gitHubService;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GitHubService"/> class.
+        /// Initializes a new instance of the <see cref="GitHubController"/> class.
         /// </summary>
-        /// <param name="client">
-        /// The client.
+        /// <param name="gitHubService">
+        /// The git hub service.
         /// </param>
-        public GitHubService(GitHubClient client)
+        public GitHubController(IGitHubService gitHubService)
         {
-            //this.client = new GitHubClient(new ProductHeaderValue("my-cool-app"));
-            this.client = client;
+            this.gitHubService = gitHubService;
         }
-        
+
         /// <summary>
         /// The get last commit.
         /// </summary>
@@ -52,8 +49,15 @@ namespace Dashboard.API.Services.Services
         /// </returns>
         public Commit GetLastCommit(string account, string repo)
         {
-            var commits = this.client.Repository.Commit.GetAll(account, repo).Result;
-            var lastCommit = commits.OrderByDescending(x => x.Commit.Author.Date).First();
+            var result = this.gitHubService.GetLastCommit(account, repo);
+
+            return null;
+        }
+
+        public Commit GetTest()
+        {
+            var result = this.gitHubService.GetLastCommit("joker2000", "dashboard");
+
             return null;
         }
     }

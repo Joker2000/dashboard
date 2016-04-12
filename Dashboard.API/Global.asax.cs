@@ -14,6 +14,9 @@ namespace Dashboard.API
     using System.Web.Optimization;
     using System.Web.Routing;
 
+    using Castle.Windsor;
+    using Castle.Windsor.Installer;
+
     /// <summary>
     /// The web api application.
     /// </summary>
@@ -24,6 +27,11 @@ namespace Dashboard.API
         /// </summary>
         protected void Application_Start()
         {
+            var container = new WindsorContainer();
+            container.Install(FromAssembly.This());
+            GlobalConfiguration.Configuration.DependencyResolver = new CastleWindsor.DependencyResolver(
+                container.Kernel);
+
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

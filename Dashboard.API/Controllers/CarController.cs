@@ -12,9 +12,6 @@ namespace Dashboard.API.Controllers
     using System.Collections.Generic;
     using System.Web.Http;
 
-    using Dashboard.API.DAL;
-    using Dashboard.API.Services;
-    using Dashboard.API.Services.Parsers;
     using Dashboard.API.Services.Services;
     using Dashboard.Dto;
 
@@ -27,14 +24,25 @@ namespace Dashboard.API.Controllers
         /// The vehicle service.
         /// </summary>
         private readonly IVehicleService vehicleService;
-        
+
         /// <summary>
         /// Initializes a new instance of the <see cref="CarController"/> class.
         /// </summary>
-        public CarController()
+        /// <param name="vehicleService">
+        /// The vehicle service.
+        /// </param>
+        public CarController(IVehicleService vehicleService)
         {
-            this.vehicleService = new VehicleService(new WebClient(), new VehicleHtmlParser());
+            this.vehicleService = vehicleService;
         }
+
+        ///// <summary>
+        ///// Initializes a new instance of the <see cref="CarController"/> class.
+        ///// </summary>
+        //public CarController()
+        //{
+        //    this.vehicleService = new VehicleService(new WebClient(), new VehicleHtmlParser());
+        //}
 
         /// <summary>
         /// The get.
