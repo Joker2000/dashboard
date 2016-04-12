@@ -10,12 +10,14 @@
 namespace Dashboard.Web.Controllers
 {
     using System;
+    using System.Configuration;
     using System.Web.Mvc;
 
     using AutoMapper;
 
     using Castle.Components.DictionaryAdapter;
 
+    using Dashboard.Constants;
     using Dashboard.Dto;
     using Dashboard.Web.Mapping;
     using Dashboard.Web.Services;
@@ -26,6 +28,26 @@ namespace Dashboard.Web.Controllers
     /// </summary>
     public class WidgetController : Controller
     {
+        /// <summary>
+        /// The vehicle 1 make.
+        /// </summary>
+        private readonly string vehicle1Make = ConfigurationManager.AppSettings[Constants.AppSettings.Vehicle1.Make];
+
+        /// <summary>
+        /// The vehicle 1 plate.
+        /// </summary>
+        private readonly string vehicle1Plate = ConfigurationManager.AppSettings[Constants.AppSettings.Vehicle1.NumberPlate];
+
+        ///// <summary>
+        ///// The vehicle 2 make.
+        ///// </summary>
+        //private readonly string vehicle2Make = ConfigurationManager.AppSettings[Constants.AppSettings.Vehicle2.Make];
+
+        ///// <summary>
+        ///// The vehicle 2 plate.
+        ///// </summary>
+        //private readonly string vehicle2Plate = ConfigurationManager.AppSettings[Constants.AppSettings.Vehicle2.NumberPlate];
+
         /// <summary>
         /// The DVLA service.
         /// </summary>
@@ -51,7 +73,7 @@ namespace Dashboard.Web.Controllers
         /// </returns>
         public ActionResult Dvla()
         {
-            var dto = this.dvlaService.GetVehicleDetails("Audi", "YD54UAT");
+            var dto = this.dvlaService.GetVehicleDetails(this.vehicle1Make, this.vehicle1Plate);
 
             var viewModel = Mapper.Map<VehicleDto, DvlaWidgetViewModel>(dto);
 
