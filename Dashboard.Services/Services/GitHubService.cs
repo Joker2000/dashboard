@@ -9,6 +9,8 @@
 
 namespace Dashboard.API.Services.Services
 {
+    using System;
+
     using Octokit;
 
     /// <summary>
